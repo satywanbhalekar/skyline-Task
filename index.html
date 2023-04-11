@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Lab Entry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lock-container">
+            <div class="lock"></div>
+            <div class="lock-hole"></div>
+        </div>
+        <div class="door-container">
+            <div class="door-left"style="display: flex; width: 50%; "><img src="UI1.jpg" alt=""></div>
+            <div class="door-right" style="display: flex; width: 50%;"><img src="UI2.jpg" alt=""></div>
+        </div>
+        <form class="password-form" id="password-form">
+            <input type="password" placeholder="Enter Password" id="password-input">
+            <button type="submit" id="submit-button">Enter</button>
+        </form>
+        <div class="time-remaining-container" id="time-remaining-container">
+            <p id="time-remaining"></p>
+            <button id="exit-button">Exit</button>
+        </div>
+        <div class="time-up-container" id="time-up-container">
+            <p>Your allocated time has ended.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
